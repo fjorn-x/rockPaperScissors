@@ -11,6 +11,9 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection = computerPlay()) {
+  if (playerSelection === null) {
+    playerSelection = "Rock";
+  }
   let playerOption =
     playerSelection.charAt(0).toUpperCase() +
     String(playerSelection).slice(1).toLowerCase();
@@ -31,7 +34,8 @@ function playRound(playerSelection, computerSelection = computerPlay()) {
 
 function game() {
   for (i = 0; i < 5; i++) {
-    let result = playRound(prompt("Select Rock, Paper or Scissors"));
+    let playerOption = prompt("Select Rock, Paper or Scissors");
+    let result = playRound(playerOption);
     console.log(result);
   }
 }
