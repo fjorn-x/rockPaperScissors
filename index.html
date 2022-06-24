@@ -7,8 +7,44 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png" />
   </head>
   <body>
+    <div class="header">
+      <div>Rock Paper Scissor</div>
+    </div>
+    <div class="options-container">
+      <div class="player-side">
+        <img src="images/man.png" alt="" />
+        <h2>Player Choice :</h2>
+        <div class="player-choice"></div>
+      </div>
+      <div class="buttons">
+        <button type="button" class="rock" value="ROCK">ROCK</button>
+        <button type="button" class="paper" value="PAPER">PAPER</button>
+        <button type="button" class="scissor" value="SCISSOR">SCISSOR</button>
+      </div>
+      <div class="computer-side">
+        <img src="images/robot.png" />
+        <h2>Computer Choice :</h2>
+        <div class="computer-choice"></div>
+      </div>
+    </div>
+    <div class="score-container">
+      <div class="score">Score</div>
+      <div class="players">
+        <div class="player result-box">
+          <div>Player</div>
+          <div class="playerScore">0</div>
+        </div>
+        <div class="computer result-box">
+          <div>Computer</div>
+          <div class="computerScore">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Developed by fjorn-x</div>
+
     <script src="script.js" async defer></script>
   </body>
 </html>
